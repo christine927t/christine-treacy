@@ -1,0 +1,101 @@
+html {
+    /* background: url(img//heather-barnes-gP1YecpRyD8-unsplash.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+
+}
+h1 {
+    font-size: 200px;
+    line-height: 20%;
+    letter-spacing: -15px;
+    text-align: center;
+    margin-bottom: 115px;
+    
+}
+
+img {
+    display: block;
+    margin: 100px auto 0 auto;
+    width: 50%;
+}
+
+nav {
+    height: 100px;
+}
+
+nav ul{
+    list-style-type: none;
+    padding-left: 10px;
+}
+nav ul li {
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color:white;
+}
+
+p {
+    font-size: 20px;
+    line-height: 10%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.nav-about {
+    padding-right: 7px;
+}
+
+.nav-trade {
+    padding-right: 7px;
+}
+
+.nav-left {
+    float: left;
+}
+.nav-middle{
+    float: right;
+    padding-right: 10px;
+    align-content: space-between;
+} 
+
+.nav-right{
+    float: right;
+    padding-right: 70px;
+}
+
+/****Media Queries****/
+@media (max-width: 1507px){
+    h1 {
+        font-size: 150px;
+        letter-spacing: -10px;
+    }
+}
+
+@media (max-width: 1123px){
+    h1 {
+        font-size: 120px;
+        letter-spacing: -8px;
+    }
+
+    p {
+        line-height: normal;
+    }
+}
+
+@media (max-width: 876px){
+    h1 {
+        font-size: 90px;
+        word-wrap: break-word;
+        line-height: normal;
+        letter-spacing: -5px;
+
+    }
+}
