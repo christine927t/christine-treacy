@@ -69,11 +69,13 @@ p {
 .nav-right{
     float: right;
     padding-right: 70px;
-}
+    
+}/*** flipping card transition ***/
 
 .card {
     position: relative;
-    float: left;
+    display: inline-block;
+    /* float: left; */
     padding-bottom: 25%;
     width: 25%;
     text-align: center;
@@ -86,6 +88,8 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
+    display: inline-block;
+
 }
 
 .card__front,
@@ -104,6 +108,40 @@ p {
     background-color: #1e1e1e;
     -webkit-transform: rotateY(-180deg);
             transform: rotateY(-180deg);
+}
+
+/**on hover, front card transitions to -180**/
+.card.effect__hover:hover .card__front {
+    -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+}
+
+/**on hover, back card transitions to 0**/
+.card.effect__hover:hover .card__back{
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0)
+}
+
+/**on click, front card transitions to -180**/
+.card.effect__click.flipped .card__front{
+    -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+}
+
+/**on click, back card transitions to 0**/
+.card.effect__click.flipped .card__back {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+}
+
+.card.effect__random.flipped .card__front {
+    -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+}
+
+.card.effect__random.flipped .card__back {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
 }
 
 
