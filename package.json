@@ -1,0 +1,28 @@
+{
+  "name": "christine-treacy",
+  "version": "1.0.0",
+  "description": "\"# christine-treacy\"",
+  "main": "script.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "production": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christine927t/christine-treacy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/christine927t/christine-treacy/issues"
+  },
+  "homepage": "https://github.com/christine927t/christine-treacy#readme",
+  "dependencies": {
+    "locomotive-scroll": "^4.1.0"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.32.8"
+  }
+}
