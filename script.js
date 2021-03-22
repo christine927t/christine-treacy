@@ -3,9 +3,27 @@ import LocomotiveScroll from 'locomotive-scroll';
 const scroll = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
     smooth: true,
-    multiplier: 1
+    scrollFromAnywhere: true
+    // multiplier: 1
 });
 
+// let skill = document.getElementById("developer-title") 
+// skill.addEventListener("mouseover", function (event) {
+//     event.target.style.color="blue";
+
+//     setTimeout(function() {
+//         event.target.style.color="";
+//     }, 500)
+// }, false)
+
+document.querySelectorAll('.all-titles').forEach(item => {
+    item.addEventListener('mouseover', event => {
+        event.target.style.color="blue";
+        setTimeout(function() {
+            event.target.style.color="";
+        }, 500)
+    }, false)
+});
 // (function () {
 //     var cards = document.querySelectorAll(".card.effect__click");
 //     for (let i = 0, len = cards.length; i < len; i++) {
