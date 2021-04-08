@@ -2,18 +2,8 @@
     box-sizing: border-box;
 } */
 html {
-    /* background: url(img//heather-barnes-gP1YecpRyD8-unsplash.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; */
-    /* background-color: black; */
     color: white;
-    /* height: 100%; */
-    /* height: 3000px; */
     background: linear-gradient(-32deg, #003399 50%, #993380 50%);
-    /* background: black; */
-    /* background: linear-gradient(120deg, #003399 0%, #993380 25%, #4d0099 255%, #339999 25%, #e6b800 25%); */
 }
 
 body {
@@ -29,11 +19,19 @@ body {
     text-align: left;    
     /* opacity: .05; */
     color: transparent;
-	-webkit-text-stroke: 1px navy;
-	text-stroke: 1px navy;
+	-webkit-text-stroke: 2px #003399;
+	text-stroke: 1px #003399;
 	-webkit-text-fill-color: transparent;
 	text-fill-color: transparent;
 
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-child {
+    flex: 1;
 }
 
 .name-heading {
@@ -41,14 +39,32 @@ body {
 }
 
 .about-heading {
-    height: 500px;
-    margin-right: 15px;
+    height: 1000px;
+    margin-right: 10px;
+    padding-top: 300px;
 }
+
+.about-heading span{
+    color: transparent;
+	-webkit-text-stroke: .75px rgb(228, 194, 5);
+	text-stroke: 1px rgb(228, 194, 5);
+	-webkit-text-fill-color: transparent;
+	text-fill-color: transparent;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+.about {
+    font-size: 30px;
+    text-align: right;
+}
+
 
 img {
     display: block;
     margin: 100px auto 0 auto;
-    /* width: 50%; */
     height: 400px;
     width: 400px;
     padding: 250px 0 10px 0;
@@ -65,19 +81,11 @@ nav ul{
 nav ul li {
     display: inline-block;
     font-size: 24px;
-    /* text-transform: uppercase; */
 }
 
 a {
     text-decoration: none;
     color:white;
-}
-
-.about {
-    font-size: 20px;
-    line-height: 10%;
-    text-align: right;
-    /* text-transform: uppercase; */
 }
 
 .nav-about {
@@ -105,9 +113,7 @@ a {
 /* locomotive-scroll */
 section {
     height: 100vh;
-    color: white;
-    /* padding: 10em; */
-    
+    color: white;    
 } 
 
 section h1 {
@@ -117,18 +123,6 @@ section h1 {
 section p {
         font-size: 1.5em;
 }
-
-/* section:nth-child(even) {
-        background-color:#993380;
-        color: white;
-}
-
-section:nth-child(odd) {
-        background: #e6b800;
-        color:white
-} */
-
-
 
 /* diagonal box */
 .diagonal-box1, .diagonal-box2 {
@@ -166,8 +160,16 @@ section:nth-child(odd) {
 }
 
 .all-titles {
-    padding: 50px 15px 0 0;
-    justify-content: right;
+    position: absolute;
+    bottom: 600px;
+    right: 10px;
+}
+
+.fas {
+    position: absolute;
+    bottom: 200px;
+    left: 50%;
+    color:rgb(182, 182, 174)
 }
 .titles-p {
     opacity: 0;
@@ -191,9 +193,9 @@ section:nth-child(odd) {
     opacity: 1;
 }
 
-/* .is-inview {
-    color: black;
-} */
+.is-inview {
+    /* color: black; */
+}
 
 /*** flipping card transition ***/
 .card {
@@ -203,69 +205,6 @@ section:nth-child(odd) {
     padding-bottom: 25%;
     width: 25%;
     text-align: center;
-}
-
-.card__front,
-.card__back {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: inline-block;
-
-}
-
-.card__front,
-.card__back {
-    -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-    -webkit-transition: -webkit-transform 0.3s;
-            transition: transfom 0.3s;
-}
-
-.card__front {
-    background-color: #ff5078;
-}
-
-.card__back {
-    background-color: #1e1e1e;
-    -webkit-transform: rotateY(-180deg);
-            transform: rotateY(-180deg);
-}
-
-/**on hover, front card transitions to -180**/
-.card.effect__hover:hover .card__front {
-    -webkit-transform: rotateY(-180deg);
-            transform: rotateY(-180deg);
-}
-
-/**on hover, back card transitions to 0**/
-.card.effect__hover:hover .card__back{
-    -webkit-transform: rotateY(0);
-            transform: rotateY(0)
-}
-
-/**on click, front card transitions to -180**/
-.card.effect__click.flipped .card__front{
-    -webkit-transform: rotateY(-180deg);
-            transform: rotateY(-180deg);
-}
-
-/**on click, back card transitions to 0**/
-.card.effect__click.flipped .card__back {
-    -webkit-transform: rotateY(0);
-            transform: rotateY(0);
-}
-
-.card.effect__random.flipped .card__front {
-    -webkit-transform: rotateY(-180deg);
-            transform: rotateY(-180deg);
-}
-
-.card.effect__random.flipped .card__back {
-    -webkit-transform: rotateY(0);
-            transform: rotateY(0);
 }
 
 footer {

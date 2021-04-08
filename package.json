@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/christine927t/christine-treacy#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
     "locomotive-scroll": "^4.1.0"
   },
   "devDependencies": {
